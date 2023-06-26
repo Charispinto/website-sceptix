@@ -1,6 +1,10 @@
 import React, { useEffect, useRef, useState } from "react";
 import { useSpring, config } from "react-spring";
 import Sidebar from "../sidenav/sidebar";
+import img1 from "/public/New_Project__3_-removebg.png";
+import img2 from "/public/L1-removebg-preview.png";
+
+
 
 const Landing = () => {
   const leftRef = useRef(null);
@@ -32,40 +36,29 @@ const Landing = () => {
       className="h-screen overflow-hidden relative"
       onPointerMove={handleOnMove}
     >
-      <div
+    {/* <div
         className="h-screen w-full overflow-hidden absolute z-20 bg-cyan-100 text-stone-950"
         id="left-box"
         ref={leftRef}
         style={{ width: tweenWipe.value.interpolate((val) => `${val}%`) }}
       >
         <div className="w-screen h-screen flex flex-col items-center justify-center absolute z-10">
-          <h1 className="font-bold text-7xl my-6">
-            The{" "}
-            <span className="code bg-clip-text text-transparent bg-gradient-to-r from-cyan-500 to-blue-600 ">
-              sceptix
-            </span>{" "}
-            club
-          </h1>
-          <h3 className="text-3xl font-mono">Liberate The Mind</h3>
+          <img src={img1} alt="" />
         </div>
-        <Sidebar />
-      </div>
+        
+      </div> */}
 
       <div
         className="h-screen w-full overflow-hidden absolute z-10 bg-[#00070e] text-stone-50"
         id="right-box"
       >
         <div className="w-full h-screen flex flex-col items-center justify-center absolute z-10">
-          <h1 className="font-bold text-7xl my-6">
-            The{" "}
-            <span className="code bg-clip-text text-transparent bg-gradient-to-r from-[#2afadf] to-sky-600">
-              freedom
-            </span>{" "}
-            club
-          </h1>
-          <h3 className="text-3xl font-mono">Unchain Your Will</h3>
+        <div className="w-screen h-screen flex flex-col items-center justify-center absolute z-10">
+          <img src={img2} alt="" />
+        </div>
         </div>
         <div id="right-img" className="w-screen h-screen absolute z-0"></div>
+        <Sidebar />
       </div>
     </main>
   );
