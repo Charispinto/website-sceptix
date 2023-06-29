@@ -41,3 +41,14 @@ div{
 .main-div{
   height: 1500px;
 }
+@media (max-width: 640px){
+  .scrolled{
+    position: absolute;
+    left: 50px;
+  }
+  .parent{
+    display: flex;
+    justify-content: flex-start;
+    color: black;
+  }
+}
