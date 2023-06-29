@@ -1,6 +1,10 @@
 import React from 'react'
 import './timeline.css'
 import { useState } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // You can also use <link> for styles
+// ..
+AOS.init();
 
 function Timeline() {
      const [scrollState , setScrollState ] = useState(0)
@@ -21,10 +25,25 @@ function Timeline() {
  
   return (
 window.addEventListener('scroll',handleScroll),
-    <div className='flex justify-center main-div'>
-     <div className={`bg-blue-800 w-o border-[1px] ${scrolled}  ${scrollValue}`}></div>
+    <div className='md:flex justify-center main-div '>
+     <div className={`self-stretch bg-blue-800 w-o border-[1px] border-red-300 sm: w-0 border-[1px]  ${scrolled}  ${scrollValue}`}></div>
      <h1 className='text-white  top-[500px] fixed'>{scrollState}</h1>
-    </div>
+    
+     <div  data-aos="fade-down-right" className='text-white  h-34 w-2/5 absolute left-[700px]'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni aliquid, libero facilis excepturi consectetur corporis, laudantium soluta voluptates earum ipsum tenetur amet ipsam sint, molestias blanditiis quae vero sed et?</div>
+     <div  data-aos="fade-down-right" className='text-white  h-34 w-2/5 absolute right-[700px] top-12'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni aliquid, libero facilis excepturi consectetur corporis, laudantium soluta voluptates earum ipsum tenetur amet ipsam sint, molestias blanditiis quae vero sed et?</div>
+     <div  data-aos="fade-down-right" className='text-white  h-34 w-2/5 absolute left-[700px] top-36'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni aliquid, libero facilis excepturi consectetur corporis, laudantium soluta voluptates earum ipsum tenetur amet ipsam sint, molestias blanditiis quae vero sed et?</div>
+     <div  data-aos="fade-down-right" className='text-white  h-34 w-2/5 absolute right-[700px] top-48'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni aliquid, libero facilis excepturi consectetur corporis, laudantium soluta voluptates earum ipsum tenetur amet ipsam sint, molestias blanditiis quae vero sed et?</div>
+     <div  data-aos="fade-down-right" className='text-white  h-34 w-2/5 absolute left-[700px] top-80'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni aliquid, libero facilis excepturi consectetur corporis, laudantium soluta voluptates earum ipsum tenetur amet ipsam sint, molestias blanditiis quae vero sed et?</div>
+     <div  data-aos="fade-down-right" className='text-white  h-34 w-2/5 absolute right-[700px] top-[350px]'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni aliquid, libero facilis excepturi consectetur corporis, laudantium soluta voluptates earum ipsum tenetur amet ipsam sint, molestias blanditiis quae vero sed et?</div>
+     <div  data-aos="fade-down-right" className='text-white  h-34 w-2/5 absolute left-[700px] top-[500px]'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni aliquid, libero facilis excepturi consectetur corporis, laudantium soluta voluptates earum ipsum tenetur amet ipsam sint, molestias blanditiis quae vero sed et?</div>
+     <div  data-aos="fade-down-right" className='text-white  h-34 w-2/5 absolute right-[700px] top-[550px]'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni aliquid, libero facilis excepturi consectetur corporis, laudantium soluta voluptates earum ipsum tenetur amet ipsam sint, molestias blanditiis quae vero sed et?</div>
+     <div  data-aos="fade-down-right" className='text-white  h-34 w-2/5 absolute left-[700px] top-[700px]'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni aliquid, libero facilis excepturi consectetur corporis, laudantium soluta voluptates earum ipsum tenetur amet ipsam sint, molestias blanditiis quae vero sed et?</div>
+     <div  data-aos="fade-down-right" className='text-white  h-34 w-2/5 absolute right-[700px] top-[750px]'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni aliquid, libero facilis excepturi consectetur corporis, laudantium soluta voluptates earum ipsum tenetur amet ipsam sint, molestias blanditiis quae vero sed et?</div>
+     <div  data-aos="fade-down-right" className='text-white  h-34 w-2/5 absolute left-[700px] top-[850px]'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni aliquid, libero facilis excepturi consectetur corporis, laudantium soluta voluptates earum ipsum tenetur amet ipsam sint, molestias blanditiis quae vero sed et?</div>
+     <div  data-aos="fade-down-right" className='text-white  h-34 w-2/5 absolute right-[700px] top-[900px]'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni aliquid, libero facilis excepturi consectetur corporis, laudantium soluta voluptates earum ipsum tenetur amet ipsam sint, molestias blanditiis quae vero sed et?</div>
+     <div data-aos="flip-up"  className='text-white  h-34 w-2/5 absolute right-[700px] top-[1100px]'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt nobis sunt aut hic corrupti vel repellat at quos magni consequatur, corporis iure debitis, inventore tenetur sed odit alias deserunt eveniet.</div>
+     </div>
+   
   )
 }
 
