@@ -4,6 +4,7 @@ import { AiFillLinkedin } from "react-icons/ai";
 import Footer from "../footer/footer.jsx";
 import Cards from "../joywin-cards/Card.jsx";
 
+
 const EventPage = () => {
   const eventPast = [
     {

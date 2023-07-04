@@ -15,7 +15,6 @@ function Timeline() {
      const handleScroll = ()=>{
          setScrollState(window.scrollY)
      }
-     
      // if(scrollState >500){
      //      scrollValue = 'scroll'
      // }
@@ -27,22 +26,14 @@ function Timeline() {
  
   return (
 window.addEventListener('scroll',handleScroll),
-<>
  <div className='flex justify-center main-div '>
- <div className='grid place-items-start '>
-        <div className='text-white place-self-start'>1</div>
-        <div className='text-white'>2</div>
-        
-
-     </div>
      <div className={`self-stretch bg-blue-800 w-o border-[1px] border-red-300  ${scrolled}  ${scrollValue}`}></div>
      {/* <h1 className='text-white  top-[500px] fixed'>{scrollState}</h1> */}
-
-     </div>
    
-
      
-     </>
+     </div>
+    
+   
  )
 }
 

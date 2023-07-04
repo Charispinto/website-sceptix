@@ -39,7 +39,7 @@ div{
 }
 
 .main-div{
-
+  border: solid 5px white;
   height: 1500px;
 }
 @media (max-width: 640px){
