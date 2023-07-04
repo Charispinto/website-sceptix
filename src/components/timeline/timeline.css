@@ -39,16 +39,24 @@ div{
 }
 
 .main-div{
+
   height: 1500px;
 }
 @media (max-width: 640px){
   .scrolled{
+    height: 60%;
     position: absolute;
     left: 50px;
   }
+  .main-div{
+    width: 100%;
+  }
   .parent{
+    display:grid;
+  }
+  /* .parent{
     display: flex;
     justify-content: flex-start;
     color: black;
-  }
+  } */
 }

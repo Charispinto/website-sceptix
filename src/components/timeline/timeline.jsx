@@ -15,6 +15,7 @@ function Timeline() {
      const handleScroll = ()=>{
          setScrollState(window.scrollY)
      }
+     
      // if(scrollState >500){
      //      scrollValue = 'scroll'
      // }
@@ -26,28 +27,23 @@ function Timeline() {
  
   return (
 window.addEventListener('scroll',handleScroll),
+<>
+ <div className='flex justify-center main-div '>
+ <div className='grid place-items-start '>
+        <div className='text-white place-self-start'>1</div>
+        <div className='text-white'>2</div>
+        
 
-    <div className='flex justify-center main-div '>
-     <div className={`self-stretch bg-blue-800 w-o border-[1px] border-red-300  ${scrolled}  ${scrollValue}`}></div>
-     <h1 className='text-white  top-[500px] fixed'>{scrollState}</h1>
-    <div className='parent flex'>
-     <div  data-aos="fade-down-right" className='text-white  h-34 w-2/5 absolute left-[700px]'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni aliquid, libero facilis excepturi consectetur corporis, laudantium soluta voluptates earum ipsum tenetur amet ipsam sint, molestias blanditiis quae vero sed et?</div>
-     <div  data-aos="fade-down-right" className='text-white  h-34 w-2/5 absolute right-[700px] top-12'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni aliquid, libero facilis excepturi consectetur corporis, laudantium soluta voluptates earum ipsum tenetur amet ipsam sint, molestias blanditiis quae vero sed et?</div>
-     <div  data-aos="fade-down-right" className='text-white  h-34 w-2/5 absolute left-[700px] top-36'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni aliquid, libero facilis excepturi consectetur corporis, laudantium soluta voluptates earum ipsum tenetur amet ipsam sint, molestias blanditiis quae vero sed et?</div>
-     <div  data-aos="fade-down-right" className='text-white  h-34 w-2/5 absolute right-[700px] top-48'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni aliquid, libero facilis excepturi consectetur corporis, laudantium soluta voluptates earum ipsum tenetur amet ipsam sint, molestias blanditiis quae vero sed et?</div>
-     <div  data-aos="fade-down-right" className='text-white  h-34 w-2/5 absolute left-[700px] top-80'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni aliquid, libero facilis excepturi consectetur corporis, laudantium soluta voluptates earum ipsum tenetur amet ipsam sint, molestias blanditiis quae vero sed et?</div>
-     <div  data-aos="fade-down-right" className='text-white  h-34 w-2/5 absolute right-[700px] top-[350px]'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni aliquid, libero facilis excepturi consectetur corporis, laudantium soluta voluptates earum ipsum tenetur amet ipsam sint, molestias blanditiis quae vero sed et?</div>
-     <div  data-aos="fade-down-right" className='text-white  h-34 w-2/5 absolute left-[700px] top-[500px]'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni aliquid, libero facilis excepturi consectetur corporis, laudantium soluta voluptates earum ipsum tenetur amet ipsam sint, molestias blanditiis quae vero sed et?</div>
-     <div  data-aos="fade-down-right" className='text-white  h-34 w-2/5 absolute right-[700px] top-[550px]'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni aliquid, libero facilis excepturi consectetur corporis, laudantium soluta voluptates earum ipsum tenetur amet ipsam sint, molestias blanditiis quae vero sed et?</div>
-     <div  data-aos="fade-down-right" className='text-white  h-34 w-2/5 absolute left-[700px] top-[700px]'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni aliquid, libero facilis excepturi consectetur corporis, laudantium soluta voluptates earum ipsum tenetur amet ipsam sint, molestias blanditiis quae vero sed et?</div>
-     <div  data-aos="fade-down-right" className='text-white  h-34 w-2/5 absolute right-[700px] top-[750px]'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni aliquid, libero facilis excepturi consectetur corporis, laudantium soluta voluptates earum ipsum tenetur amet ipsam sint, molestias blanditiis quae vero sed et?</div>
-     <div  data-aos="fade-down-right" className='text-white  h-34 w-2/5 absolute left-[700px] top-[850px]'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni aliquid, libero facilis excepturi consectetur corporis, laudantium soluta voluptates earum ipsum tenetur amet ipsam sint, molestias blanditiis quae vero sed et?</div>
-     <div  data-aos="fade-down-right" className='text-white  h-34 w-2/5 absolute right-[700px] top-[900px]'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni aliquid, libero facilis excepturi consectetur corporis, laudantium soluta voluptates earum ipsum tenetur amet ipsam sint, molestias blanditiis quae vero sed et?</div>
-     <div data-aos="flip-up"  className='text-white  h-34 w-2/5 absolute right-[700px] top-[1100px]'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt nobis sunt aut hic corrupti vel repellat at quos magni consequatur, corporis iure debitis, inventore tenetur sed odit alias deserunt eveniet.</div>
      </div>
+     <div className={`self-stretch bg-blue-800 w-o border-[1px] border-red-300  ${scrolled}  ${scrollValue}`}></div>
+     {/* <h1 className='text-white  top-[500px] fixed'>{scrollState}</h1> */}
+
      </div>
    
-  )
+
+     
+     </>
+ )
 }
 
 export default Timeline

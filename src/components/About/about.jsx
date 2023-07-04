@@ -7,11 +7,12 @@ import Footer from '../footer/footer.jsx';
 import { MdPeopleOutline } from 'react-icons/md';
 import { GiTeacher } from "react-icons/gi"; 
 import { GiFist } from "react-icons/gi"; 
-
+import Timeline from '../timeline/timeline.jsx'
 
 
 const AboutUs = () => {
   return (
+    
     <>
     <div className=" mx-auto overflow-hidden sm:pt-20 sm:mx-24 ">
       
@@ -41,8 +42,8 @@ const AboutUs = () => {
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 text-white sm:mx-20">
           <div className="text-center">
             <MdPeopleOutline className="mx-auto text-blue-400" style={{ fontSize: '80px'}}/>
-            <p className="mt-4">Dedicated to empowering individuals with the liberating force of open-source software</p>
-  
+            <p className="mt-4"><a href="/timeline">Dedicated to empowering individuals with the liberating force of open-source software</a></p>
+          
           </div>
          
           <div className="text-center">
