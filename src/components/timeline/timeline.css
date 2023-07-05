@@ -48,7 +48,7 @@ div{
 
   height: 1500px;
 }
-@media (max-width: 640px){
+@media (max-width: 800px){
   .scrolled{
     height: 20%;
     transition: 5s;
