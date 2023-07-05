@@ -10,6 +10,7 @@ import AboutUs from "./components/About/about.jsx";
 import EventPage from './components/Events/events.jsx'
 import Main_timeline from './components/timeline/main_timeline';
 import Timeline from './components/timeline/timeline';
+import ScrollingLine from './components/timeline/timeline';
 
 
 function App() {
@@ -25,7 +26,7 @@ function App() {
           <Route path="/home" element={<AboutUs/>}/>
           <Route path="/events" element={<EventPage/>} />
           <Route path="/members" element={<TeamPage/>} />
-          <Route path="/timeline" element={<Timeline/>} />
+          <Route path="/timeline" element={<ScrollingLine/>} />
 
           
         </Routes>
