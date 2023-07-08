@@ -27,15 +27,10 @@ function Line(){
     window.addEventListener('scroll',handleScroll)
 
     return (
-        <>
-    
-
-        
-    <div className={`content-center bg-blue-800 border-[1px] border-red-200 first_line`}></div>
-        <div className={`content-center bg-blue-800 border-[1px] border-red-300 ${scrolled} ${scrollValue}`}></div>
-        
-     
-        </>
+    <>
+            <div className={`content-center bg-blue-800 border-[1px] border-red-200 first_line`}></div>
+                <div className={`content-center bg-blue-800 border-[1px] border-red-300 ${scrolled} ${scrollValue}`}></div>
+    </>
 
     );
    
@@ -95,7 +90,7 @@ function Timeline() {
 
         {timelineElements.map((elements,index) =>{
             return (
-                <>
+            <>
                 <div className='flex justify-start'>
                     <div className='w-2/5 mt-10 ml-24'>
                         <p className='text-white text-justify'>{elements.description}</p>
@@ -107,11 +102,7 @@ function Timeline() {
                             <p className='text-white text-justify'>{elements.description}</p>
                         </div>
                 </div> 
-
-
-
-
-                </>
+            </>
             );
 
         })}
@@ -127,23 +118,6 @@ function Timeline() {
     
 
     </div>
-    
-   
-   
-     {/* <div  data-aos="zoom-out" className='div1 text-white   absolute left-[700px] '>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni aliquid, libero facilis excepturi consectetur corporis, laudantium soluta voluptates earum ipsum tenetur amet ipsam sint, molestias blanditiis quae vero sed et?</div>
-     <div  data-aos="zoom-out" className='div2 text-white   absolute right-[700px] top-12'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni aliquid, libero facilis excepturi consectetur corporis, laudantium soluta voluptates earum ipsum tenetur amet ipsam sint, molestias blanditiis quae vero sed et?</div>
-     <div  data-aos="zoom-out" className='div3 text-white   absolute left-[700px] top-36'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni aliquid, libero facilis excepturi consectetur corporis, laudantium soluta voluptates earum ipsum tenetur amet ipsam sint, molestias blanditiis quae vero sed et?</div>
-     <div  data-aos="zoom-out" className='div4 text-white   absolute right-[700px] top-48'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni aliquid, libero facilis excepturi consectetur corporis, laudantium soluta voluptates earum ipsum tenetur amet ipsam sint, molestias blanditiis quae vero sed et?</div>
-     <div  data-aos="zoom-out" className='div5 text-white   absolute left-[700px] top-80'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni aliquid, libero facilis excepturi consectetur corporis, laudantium soluta voluptates earum ipsum tenetur amet ipsam sint, molestias blanditiis quae vero sed et?</div>
-     <div  data-aos="zoom-out" className='div6 text-white   absolute right-[700px] top-[350px]'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni aliquid, libero facilis excepturi consectetur corporis, laudantium soluta voluptates earum ipsum tenetur amet ipsam sint, molestias blanditiis quae vero sed et?</div>
-     <div  data-aos="zoom-out" className='div7 text-white   absolute left-[700px] top-[500px]'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni aliquid, libero facilis excepturi consectetur corporis, laudantium soluta voluptates earum ipsum tenetur amet ipsam sint, molestias blanditiis quae vero sed et?</div>
-     <div  data-aos="zoom-out" className='div8 text-white   absolute right-[700px] top-[550px]'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni aliquid, libero facilis excepturi consectetur corporis, laudantium soluta voluptates earum ipsum tenetur amet ipsam sint, molestias blanditiis quae vero sed et?</div>
-     <div  data-aos="zoom-out" className='div9 text-white   absolute left-[700px] top-[700px]'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni aliquid, libero facilis excepturi consectetur corporis, laudantium soluta voluptates earum ipsum tenetur amet ipsam sint, molestias blanditiis quae vero sed et?</div>
-     <div  data-aos="zoom-out" className='div10 text-white   absolute right-[700px] top-[750px]'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni aliquid, libero facilis excepturi consectetur corporis, laudantium soluta voluptates earum ipsum tenetur amet ipsam sint, molestias blanditiis quae vero sed et?</div>
-     <div  data-aos="zoom-out" className='div11 text-white   absolute left-[700px] top-[850px]'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni aliquid, libero facilis excepturi consectetur corporis, laudantium soluta voluptates earum ipsum tenetur amet ipsam sint, molestias blanditiis quae vero sed et?</div>
-     <div  data-aos="zoom-out" className='div12 text-white   absolute right-[700px] top-[900px]'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni aliquid, libero facilis excepturi consectetur corporis, laudantium soluta voluptates earum ipsum tenetur amet ipsam sint, molestias blanditiis quae vero sed et?</div>
-    
-    </div> */}
     </>
 
  )
