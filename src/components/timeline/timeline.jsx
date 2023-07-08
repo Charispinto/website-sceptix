@@ -22,7 +22,7 @@ function Line(){
     //      scrollValue = ''
     // }
     {
-    scrollState >= 100 && scrollState <200 ? scrollValue = 'base_line_1' : scrollState >= 200 && scrollState <300 ? scrollValue = 'base_line_2' :scrollState >= 300 && scrollState <400?  scrollValue = 'base_line_3' :    scrollState >= 400 && scrollState <500? scrollValue = 'base_line_4' : scrollState >= 500 && scrollState <600? scrollValue = 'base_line_5' :scrollState >= 600 && scrollState<700 ? scrollValue = 'base_line_6': scrollState >= 700 && scrollState<800 ? scrollValue = 'base_line_7': scrollState >= 800 && scrollState<900 ? scrollValue = 'base_line_8':scrollState >=900 && scrollState <1000 ? scrollValue = 'base_line_9': scrollState >=1000 && scrollState <1200 ? scrollValue = 'base_line_10':scrollValue = ''}
+    scrollState >= 100 && scrollState <200 ? scrollValue = 'base_line_1' : scrollState >= 200 && scrollState <300 ? scrollValue = 'base_line_2' :scrollState >= 300 && scrollState <400?  scrollValue = 'base_line_3' :    scrollState >= 400 && scrollState <500? scrollValue = 'base_line_4' : scrollState >= 500 && scrollState <600? scrollValue = 'base_line_5' :scrollState >= 600 && scrollState<700 ? scrollValue = 'base_line_6': scrollState >= 700 && scrollState<800 ? scrollValue = 'base_line_7': scrollState >= 800 && scrollState<900 ? scrollValue = 'base_line_8':scrollState >=900 && scrollState <1000 ? scrollValue = 'base_line_9': scrollState >=1000 && scrollState <1200 ? scrollValue = 'base_line_10':scrollState >=1200 && scrollState <1300 ?scrollValue = 'base_line_11':scrollState >=1300 && scrollState <1400 ? scrollValue = 'base_line_12':scrollState >=1400 && scrollState <1500 ? scrollValue = 'base_line_13':scrollValue = ''}
 
     window.addEventListener('scroll',handleScroll)
 
@@ -92,13 +92,16 @@ function Timeline() {
             return (
             <>
                 <div className='flex justify-start'>
+                   
                     <div className='w-2/5 mt-10 ml-24'>
+                    <h2 className='text-white  text-3xl font-bold'>{elements.title}</h2><br></br>
                         <p className='text-white text-justify'>{elements.description}</p>
                     </div>
                 </div> 
 
                 <div className='flex justify-end'>
                         <div className='w-2/5 mt-10 mr-24'>
+                        <h2 className='text-white  text-3xl font-bold'>{elements.title}</h2><br></br>
                             <p className='text-white text-justify'>{elements.description}</p>
                         </div>
                 </div> 

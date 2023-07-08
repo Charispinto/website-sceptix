@@ -55,6 +55,18 @@ transition: 1s;
   height: 246%;
   transition: 1s;
 }
+.base_line_11{
+  height: 255%;
+  transition: 1s;
+}
+.base_line_12{
+  height: 265%;
+  transition: 1s;
+}
+.base_line_13{
+  height: 275%;
+  transition: 1s;
+}
 div{
   transition: 1s;
 }
