@@ -28,7 +28,7 @@ function Line(){
 
     return (
     <>
-            <div className={`content-center bg-blue-800 border-[1px] border-red-200 first_line`}></div>
+            {/* <div className={`content-center bg-blue-800 border-[1px] border-red-200 first_line`}></div> */}
                 <div className={`content-center bg-blue-800 border-[1px] border-red-300 ${scrolled} ${scrollValue}`}></div>
     </>
 
@@ -47,7 +47,7 @@ function Timeline() {
         
     {/* <div className='parent bg-black'> */}
     {/* firt div */}
-    <div className='h-full bg-black'>
+    <div className='h-full bg-black mt-0'>
        {/* <div className='flex justify-start'>
         <div className='w-2/5 mt-10 ml-24'>
             <p className='text-white text-justify'>The FOSS Movement emerged from Richard Stallman's GNU Project in the late 1970s. With a vision of a Unix-like system built entirely from free software, Stallman laid the foundation for the influential Free Software Foundation (FSF). This ignited the thriving FOSS movement, driving innovation and collaboration.</p>
@@ -87,8 +87,16 @@ function Timeline() {
         </div>
        </div> */}
 
+    
+        <h1 className=" text-center mt-0 py-16 text-6xl font-bold mb-8 m-auto bg-gradient-to-r from-sky-500 to-blue-400 bg-clip-text text-transparent">
+          Timeline of FOSS
+        </h1>
+      
 
-        {timelineElements.map((elements,index) =>{
+
+    {timelineElements.map((elements,index) =>{
+            if(elements.id %2 != 0)
+        {
             return (
             <>
                 <div className='flex justify-start'>
@@ -98,16 +106,22 @@ function Timeline() {
                         <p className='text-white text-justify'>{elements.description}</p>
                     </div>
                 </div> 
-
+            </>
+            );
+        }       
+        else {
+            return(
+             <>   
                 <div className='flex justify-end'>
                         <div className='w-2/5 mt-10 mr-24'>
                         <h2 className='text-white  text-3xl font-bold'>{elements.title}</h2><br></br>
                             <p className='text-white text-justify'>{elements.description}</p>
                         </div>
                 </div> 
-            </>
-            );
+             </>
 
+            );
+        }
         })}
 
 
