@@ -1,10 +1,14 @@
+:root{
+  --time :1s;
+}
 .scrolled{
   position: absolute;
   top: 200px;
   left: 50%;
-  height: 80%;
+  height: 65%;
   width: 1px;
-  transition: 1s;
+  transition :var(--time);
+  
 }
 .first_line{
   position: absolute;
@@ -13,62 +17,62 @@
   left: 50%;
   height: 50%;
   width: 1px;
-  transition: 1s;
+  transition :var(--time);
 }
 .base_line_1{
 height: 100%;  
-transition: 1s;
+transition :var(--time);
 }
 .base_line_2{
   height: 120%;  
-  transition: 1s;
+   transition :var(--time);
 }
 .base_line_3{
   height: 130%;  
-  transition: 1s;
+   transition :var(--time);
 }
 .base_line_4{
   height: 140%;  
-  transition: 1s;
+   transition :var(--time);
 }
 .base_line_5{
   height: 145%;  
- transition: 1s;
+  transition :var(--time);
  }
 .base_line_6{
   height: 160%;
-  transition: 1s;
+   transition :var(--time);
 }
 .base_line_7{
   height: 180%;
-  transition: 1s;
+   transition :var(--time);
 }
 .base_line_8{
   height: 200%;
-  transition: 1s;
+   transition :var(--time);
 }
 .base_line_9{
   height: 220%;
-  transition: 1s;
+   transition :var(--time);
 }
 .base_line_10{
   height: 246%;
-  transition: 1s;
+   transition :var(--time);
 }
 .base_line_11{
   height: 255%;
-  transition: 1s;
+   transition :var(--time);
 }
 .base_line_12{
   height: 265%;
-  transition: 1s;
+   transition :var(--time);
 }
 .base_line_13{
   height: 275%;
-  transition: 1s;
+   transition :var(--time);
 }
 div{
-  transition: 1s;
+   transition :var(--time);
 }
 
 
@@ -93,47 +97,44 @@ div{
     width: 100%;
    
   }
- 
-
   .scrolled{
   left: 25%;
-    transition: 1s;
+     transition :var(--time);
   }
   .base_line_1{
   height: 80%;  
-  transition: 1s;
+   transition :var(--time);
   }
   .base_line_2{
     height: 100%;  
-    transition: 1s;
+     transition :var(--time);
   }
   .base_line_3{
     height: 130%;  
-    transition: 1s;
+     transition :var(--time);
   }
   .base_line_4{
     height: 160%;  
-    transition: 1s;
+     transition :var(--time);
   }
   .base_line_5{
     height: 180%;  
-   transition: 1s;
-   }
+    transition :var(--time);   }
   .base_line_6{
     height: 200%;
-    transition: 1s;
+     transition :var(--time);
   }
   .base_line_7{
     height: 220%;
-    transition: 1s;
+     transition :var(--time);
   }
   .base_line_8{
     height: 225%;
-    transition: 1s;
+     transition :var(--time);
   }
   .base_line_9{
     height: 255%;
-    transition: 1s;
+     transition :var(--time);
   }
   /* .parent{
     display: flex;

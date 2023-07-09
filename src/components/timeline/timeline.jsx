@@ -37,14 +37,9 @@ function Line(){
 }
 
 function Timeline() {
-    
- 
   return (
-  
-
     <>     {/* <h1 className='text-white  top-[500px] fixed'>{scrollState}</h1> */}
-      
-        
+           
     {/* <div className='parent bg-black'> */}
     {/* firt div */}
     <div className='h-full bg-black mt-0'>
@@ -95,15 +90,13 @@ function Timeline() {
 
 
     {timelineElements.map((elements,index) =>{
-            if(elements.id %2 != 0)
-        {
+            if(elements.id %2 != 0){
             return (
             <>
                 <div className='flex justify-start'>
-                   
                     <div className='w-2/5 mt-10 ml-24'>
-                    <h2 className='text-white  text-3xl font-bold'>{elements.title}</h2><br></br>
-                        <p className='text-white text-justify'>{elements.description}</p>
+                    <h2 className='text-white  text-3xl font-bold' key={index}>{elements.title}</h2><br></br>
+                        <p className='text-white text-justify' key={index}>{elements.description}</p>
                     </div>
                 </div> 
             </>
@@ -114,8 +107,8 @@ function Timeline() {
              <>   
                 <div className='flex justify-end'>
                         <div className='w-2/5 mt-10 mr-24'>
-                        <h2 className='text-white  text-3xl font-bold'>{elements.title}</h2><br></br>
-                            <p className='text-white text-justify'>{elements.description}</p>
+                        <h2 className='text-white  text-3xl font-bold' key={index}>{elements.title}</h2><br></br>
+                            <p className='text-white text-justify' key={index}>{elements.description}</p>
                         </div>
                 </div> 
              </>
@@ -124,16 +117,7 @@ function Timeline() {
         }
         })}
 
-
-
-
-        
-       
-       
-
     <Line/>
-    
-
     </div>
     </>
 
