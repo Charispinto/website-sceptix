@@ -22,14 +22,14 @@ function Line(){
     //      scrollValue = ''
     // }
     {
-    scrollState >= 100 && scrollState <200 ? scrollValue = 'base_line_1' : scrollState >= 200 && scrollState <300 ? scrollValue = 'base_line_2' :scrollState >= 300 && scrollState <400?  scrollValue = 'base_line_3' :    scrollState >= 400 && scrollState <500? scrollValue = 'base_line_4' : scrollState >= 500 && scrollState <600? scrollValue = 'base_line_5' :scrollState >= 600 && scrollState<700 ? scrollValue = 'base_line_6': scrollState >= 700 && scrollState<800 ? scrollValue = 'base_line_7': scrollState >= 800 && scrollState<900 ? scrollValue = 'base_line_8':scrollState >=900 && scrollState <1000 ? scrollValue = 'base_line_9': scrollState >=1000 && scrollState <1200 ? scrollValue = 'base_line_10':scrollState >=1200 && scrollState <1300 ?scrollValue = 'base_line_11':scrollState >=1300 && scrollState <1400 ? scrollValue = 'base_line_12':scrollState >=1400 && scrollState <1500 ? scrollValue = 'base_line_13':scrollValue = ''}
+    scrollState >= 100 && scrollState <200 ? scrollValue = 'base_line_1' : scrollState >= 200 && scrollState <300 ? scrollValue = 'base_line_2' :scrollState >= 300 && scrollState <400?  scrollValue = 'base_line_3' :    scrollState >= 400 && scrollState <500? scrollValue = 'base_line_4' : scrollState >= 500 && scrollState <600? scrollValue = 'base_line_5' :scrollState >= 600 && scrollState<700 ? scrollValue = 'base_line_6': scrollState >= 700 && scrollState<800 ? scrollValue = 'base_line_7': scrollState >= 800 && scrollState<900 ? scrollValue = 'base_line_8':scrollState >=900 && scrollState <1000 ? scrollValue = 'base_line_9': scrollState >=1000 && scrollState <1200 ? scrollValue = 'base_line_10':scrollState >=1200 && scrollState <1300 ?scrollValue = 'base_line_11':scrollState >=1300 && scrollState <1400 ? scrollValue = 'base_line_12':scrollState >=1400 && scrollState <1500 ? scrollValue = 'base_line_13':scrollValue = 'base_line_11'}
 
     window.addEventListener('scroll',handleScroll)
 
     return (
     <>
             {/* <div className={`content-center bg-blue-800 border-[1px] border-red-200 first_line`}></div> */}
-                <div className={`content-center bg-blue-800 border-[1px] border-red-300 ${scrolled} ${scrollValue}`}></div>
+                <div className={`xl:content-center bg-blue-800 border-[1px] border-red-300  ${scrolled} ${scrollValue}`}></div>
     </>
 
     );
@@ -42,7 +42,7 @@ function Timeline() {
            
     {/* <div className='parent bg-black'> */}
     {/* firt div */}
-    <div className='h-full bg-black mt-0'>
+    <div className='bg-black mt-0  xl:h-full lg:h-full md:h-full sm:h-full'>
        {/* <div className='flex justify-start'>
         <div className='w-2/5 mt-10 ml-24'>
             <p className='text-white text-justify'>The FOSS Movement emerged from Richard Stallman's GNU Project in the late 1970s. With a vision of a Unix-like system built entirely from free software, Stallman laid the foundation for the influential Free Software Foundation (FSF). This ignited the thriving FOSS movement, driving innovation and collaboration.</p>
@@ -93,8 +93,8 @@ function Timeline() {
             if(elements.id %2 != 0){
             return (
             <>
-                <div className='flex justify-start'>
-                    <div className='w-2/5 mt-10 ml-24'>
+                <div className='flex xl:justify-start lg:justify-center sm: justify-center'>
+                    <div className='w-2/5 xl:mt-10 ml-24 lg:mt-10 '>
                     <h2 className='text-white  text-3xl font-bold' key={index}>{elements.title}</h2><br></br>
                         <p className='text-white text-justify' key={index}>{elements.description}</p>
                     </div>
@@ -105,8 +105,8 @@ function Timeline() {
         else {
             return(
              <>   
-                <div className='flex justify-end'>
-                        <div className='w-2/5 mt-10 mr-24'>
+                <div className='flex xl:justify-end lg:justify-center sm: justify-center'>
+                        <div className='w-2/5 xl:mt-10 mr-24 lg:mt-10 ml-48 '>
                         <h2 className='text-white  text-3xl font-bold' key={index}>{elements.title}</h2><br></br>
                             <p className='text-white text-justify' key={index}>{elements.description}</p>
                         </div>

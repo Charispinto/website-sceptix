@@ -75,30 +75,78 @@ div{
    transition :var(--time);
 }
 
-
-.main-div{
-
-  height: 1500px;
-}
-@media (max-width: 800px){
+@media (max-width: 1280px){
   .scrolled{
-    height: 20%;
+    top: 238px;
+    height: 60%;
     transition: 5s;
     position: absolute;
     left: 55px;
   }
-  html{
-    background-color: rgb(0, 0, 0);
-   
+  .scrolled{
+  left: 25%;
+     transition :var(--time);
   }
- 
-  .main-div{
-   
-    width: 100%;
+  .base_line_1{
+  height: 80%;  
+   transition :var(--time);
+  }
+  .base_line_2{
+    height: 90%;  
+     transition :var(--time);
+  }
+  .base_line_3{
+    height: 100%;  
+     transition :var(--time);
+  }
+  .base_line_4{
+    height: 110%;  
+     transition :var(--time);
+  }
+  .base_line_5{
+    height: 120%;  
+    transition :var(--time);   }
+  .base_line_6{
+    height: 130%;
+     transition :var(--time);
+  }
+  .base_line_7{
+    height: 140%;
+     transition :var(--time);
+  }
+  .base_line_8{
+    height: 150%;
+     transition :var(--time);
+  }
+  .base_line_9{
+    height: 176%;
+     transition :var(--time);
+  }
+  .base_line_10{
+    height: 200%;
+     transition :var(--time);
+  }
+  .base_line_11{
+    height: 259%;
+     transition :var(--time);
+  }
+  /* .parent{
+    display: flex;
+    justify-content: flex-start;
+    color: black;
+  } */
+}
+@media (min-width:1280px){
+
+  .scrolled{
+    top: 238px;
+    height: 60%;
+    transition: 5s;
+    position: absolute;
+    left: 50%;
    
   }
   .scrolled{
-  left: 25%;
      transition :var(--time);
   }
   .base_line_1{
@@ -110,36 +158,89 @@ div{
      transition :var(--time);
   }
   .base_line_3{
-    height: 130%;  
+    height: 100%;  
      transition :var(--time);
   }
   .base_line_4{
-    height: 160%;  
+    height: 110%;  
      transition :var(--time);
   }
   .base_line_5{
-    height: 180%;  
+    height: 120%;  
     transition :var(--time);   }
   .base_line_6{
-    height: 200%;
+    height: 165%;
      transition :var(--time);
   }
   .base_line_7{
-    height: 220%;
+    height: 140%;
      transition :var(--time);
   }
   .base_line_8{
-    height: 225%;
+    height: 150%;
      transition :var(--time);
   }
   .base_line_9{
-    height: 255%;
+    height: 176%;
      transition :var(--time);
   }
-  /* .parent{
-    display: flex;
-    justify-content: flex-start;
-    color: black;
-  } */
+ 
 }
+@media (max-width:640px){
+  .scrolled{
+    top: 238px;
+    height: 50%;
+    transition: 5s;
+    position: absolute;
+    left: 25%;
+   
+  }
+  .scrolled{
+     transition :var(--time);
+  }
+  .base_line_1{
+  height: 70%;  
+   transition :var(--time);
+  }
+  .base_line_2{
+    height: 80%;  
+     transition :var(--time);
+  }
+  .base_line_3{
+    height: 100%;  
+     transition :var(--time);
+  }
+  .base_line_4{
+    height: 120%;  
+     transition :var(--time);
+  }
+  .base_line_5{
+    height: 140%;  
+    transition :var(--time);   }
+  .base_line_6{
+    height: 160%;
+     transition :var(--time);
+  }
+  .base_line_7{
+    height: 170%;
+     transition :var(--time);
+  }
+  .base_line_8{
+    height: 180%;
+     transition :var(--time);
+  }
+  .base_line_9{
+    height: 210%;
+     transition :var(--time);
+  }
+  .base_line_10{
+    height: 250%;
+     transition :var(--time);
+  }
+  .base_line_11{
+    height: 350%;
+     transition :var(--time);
+  }
+ 
 
+}
