@@ -40,51 +40,11 @@ function Timeline() {
   return (
     <>     {/* <h1 className='text-white  top-[500px] fixed'>{scrollState}</h1> */}
            
-    {/* <div className='parent bg-black'> */}
-    {/* firt div */}
     <div className='bg-black mt-0  xl:h-full lg:h-full md:h-full sm:h-full'>
-       {/* <div className='flex justify-start'>
-        <div className='w-2/5 mt-10 ml-24'>
-            <p className='text-white text-justify'>The FOSS Movement emerged from Richard Stallman's GNU Project in the late 1970s. With a vision of a Unix-like system built entirely from free software, Stallman laid the foundation for the influential Free Software Foundation (FSF). This ignited the thriving FOSS movement, driving innovation and collaboration.</p>
-        </div>
-       </div> */}
-    {/* second div */}
-       {/* <div className='flex justify-end'>
-        <div className='w-2/5 mt-10 mr-24'>
-            <p className='text-white text-justify'>In 1991, Linus Torvalds unleashed Linux, the free and game-changing kernel. Combined with GNU software, it became the heart of the vibrant FOSS ecosystem, revolutionizing technology.</p>
-        </div>
-       </div> */}
-       {/* third div */}
-       {/* <div className='flex justify-start'>
-        <div className='w-2/5 mt-10 ml-24'>
-            <p className='text-white text-justify'>In 1998, the Open Source Initiative (OSI) sparked a revolution. With the release of the Open Source Definition, a new era of authenticity was born."Open source" surged forward, reshaping technology and innovation forever. The years 1998 and beyond marked an unstoppable force that redefined the industry.</p>
-        </div>
-       </div> */}
-
-        {/* fourth div */}
-        {/* <div className='flex justify-end'>
-        <div className='w-2/5 mt-10 mr-24'>
-            <p className='text-white text-justify'> A noble revolution! Unleashing free, superior educational tools, it empowers educators and students alike. Collaboration soars, customization triumphs, and digital literacy skills thrive. Institutions embrace this mighty mission, slashing costs while igniting fearless critical thinking. Students emerge as visionary heroes, shaping a limitless future of learning.</p>
-        </div>
-       </div> */}
-
-         {/* fifth div */}
-         {/* <div className='flex justify-start'>
-        <div className='w-2/5 mt-10 ml-24'>
-            <p className='text-white text-justify'>A resounding victory! It has firmly embedded itself in the digital landscape. Linux, Apache, MySQL, Python, and more have triumphed, embraced worldwide. The FOSS movement birthed Creative Commons licenses, unleashing a revolution of sharing and openness. Now, FOSS reigns as the champion of innovation, empowerment, and global collaboration. Its victory echoes, transforming our technological journey forever.</p>
-        </div>
-       </div> */}
-
-         {/* sixth div */}
-         {/* <div className='flex justify-end'>
-        <div className='w-2/5 mt-10 mr-24'>
-            <p className='text-white text-justify'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta laudantium voluptatibus nesciunt, nisi commodi ea, consequatur aliquam, cumque sapiente enim alias necessitatibus facilis. Iure sit repellendus, sint repellat a deleniti.</p>
-        </div>
-       </div> */}
 
     
         <h1 className=" text-center mt-0 py-16 text-6xl font-bold mb-8 m-auto bg-gradient-to-r from-sky-500 to-blue-400 bg-clip-text text-transparent">
-          Timeline of FOSS
+          History of FOSS
         </h1>
       
 
