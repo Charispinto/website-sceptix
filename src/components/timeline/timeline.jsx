@@ -46,9 +46,7 @@ function Timeline() {
         <h1 className=" text-center mt-0 py-16 text-6xl font-bold mb-8 m-auto bg-gradient-to-r from-sky-500 to-blue-400 bg-clip-text text-transparent">
           History of FOSS
         </h1>
-      
-
-
+    
     {timelineElements.map((elements,index) =>{
             if(elements.id %2 != 0){
             return (
@@ -56,7 +54,7 @@ function Timeline() {
                 <div className='flex xl:justify-start lg:justify-center sm: justify-center'>
                     <div className='w-2/5 xl:mt-10 ml-24 lg:mt-10 '>
                     <h2 className='text-white  text-3xl font-bold' key={index}>{elements.title}</h2><br></br>
-                        <p className='text-white text-justify' key={index}>{elements.description}</p>
+                        <p className='text-white text-justify 2xl:mb-0 xl:mb-0 lg:mb-0 sm:mb-8' key={index}>{elements.description}</p>
                     </div>
                 </div> 
             </>
@@ -68,7 +66,7 @@ function Timeline() {
                 <div className='flex xl:justify-end lg:justify-center sm: justify-center'>
                         <div className='w-2/5 xl:mt-10 mr-24 lg:mt-10 ml-48 '>
                         <h2 className='text-white  text-3xl font-bold' key={index}>{elements.title}</h2><br></br>
-                            <p className='text-white text-justify' key={index}>{elements.description}</p>
+                            <p className='text-white text-justify 2xl:mb-0 xl:mb-0 lg:mb-0 sm:mb-8' key={index}>{elements.description}</p>
                         </div>
                 </div> 
              </>
